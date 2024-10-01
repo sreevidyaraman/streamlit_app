@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-!pip install streamlit-aggrid
+pip install streamlit-aggrid
 
 
 number = st.slider("Pick a number", 0, 100)
