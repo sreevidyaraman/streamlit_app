@@ -9,8 +9,7 @@ df = pd.DataFrame({
 
 #    'Title': ['User Story', 'Priority', 'Uploaded', 'Valide', 'Invalid', 'Incomplete', 'Variants', 'Typo', 'Total'],
 
-number = st.slider("Pick a number", 0, 100)
-st.write("Values:", number)
+
 
 # Getting user input
 input_A = st.number_input('User Story 1', value=0.0)
@@ -22,3 +21,7 @@ df.at[1, 'SN2'] = input_B
 
 # Display the updated dataframe
 st.table(df.set_index('Title'))
+
+
+number = st.slider("Pick a number", 0, 100)
+st.write("Values:", number)
