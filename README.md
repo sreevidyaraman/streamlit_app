@@ -1,2 +1,2 @@
 # streamlit_app
-AbbVie demos
+Demos
