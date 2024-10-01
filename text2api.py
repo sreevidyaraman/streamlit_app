@@ -1,5 +1,27 @@
 import streamlit as st
 import pandas as pd
 
+df = pd.DataFrame({
+    'Title': ['User Story', 'Priority', 'Uploaded', 'Valide', 'Invalid', 'Incomplete', 'Variants', 'Typo', 'Total'],
+    'Row1': [0, 0, 0],
+    'Row2': [0, 0, 0]
+})
+
+
 number = st.slider("Pick a number", 0, 100)
 st.write("Values:", number)
+
+# Getting user input
+input_A = st.number_input('User Story 1', value=0.0)
+input_B = st.number_input('User Story 2', value=0.0)
+
+# Update dataframe with user input
+df.at[0, 'User Story'] = input_A
+df.at[1, 'User Story'] = input_B
+
+# # Recalculate the Total column
+# df.at[2, 'Row1'] = df['Row1'].sum()
+# df.at[2, 'Row2'] = df['Row2'].sum()
+
+# Display the updated dataframe
+st.table(df.set_index('Title'))
