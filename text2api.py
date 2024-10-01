@@ -19,9 +19,5 @@ input_B = st.number_input('User Story 2', value=0.0)
 df.at[0, 'User Story'] = input_A
 df.at[1, 'User Story'] = input_B
 
-# # Recalculate the Total column
-# df.at[2, 'Row1'] = df['Row1'].sum()
-# df.at[2, 'Row2'] = df['Row2'].sum()
-
 # Display the updated dataframe
 st.table(df.set_index('Title'))
