@@ -86,7 +86,7 @@ def login_page():
 def doc_upload():
 
 
-    st.image(r"C:\Users\ArribalajiM\TheMathCompany Private Limited\AbbVie - 29. GenAIsys Testing\04. Product\Question Generation & Extrapolation\Codes\AbbVieLogo_white.png", use_column_width=True)
+    st.image(r"C:\Users\SreevidyaRaman\TheMathCompany Private Limited\AbbVie - 29. GenAIsys Testing\04. Product\Question Generation & Extrapolation\Codes\AbbVieLogo_white.png", use_column_width=True)
     st.markdown(
         """
         <h1 style='text-align: center;'>Testing Product</h1>
