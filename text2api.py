@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import streamlit as st
 import pandas as pd
 from st_aggrid import AgGrid, GridOptionsBuilder
@@ -79,4 +78,3 @@ response = AgGrid(
 # Display the updated data
 st.write("### Updated Data:")
 st.write(response['data'])  # Display updated data after user input
->>>>>>> c6dd4d0b0caf60b834f2380c969180273d08d561
