@@ -1,12 +1,9 @@
 import streamlit as st
 import pandas as pd
-pip install streamlit-aggrid
-
+from st_aggrid import AgGrid, GridOptionsBuilder
 
 number = st.slider("Pick a number", 0, 100)
 st.write("Values:", number)
-
-from st_aggrid import AgGrid, GridOptionsBuilder
 
 # Sample data to display in the table
 data = {
