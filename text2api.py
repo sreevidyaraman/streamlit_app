@@ -36,3 +36,26 @@ response = AgGrid(
 # Display the updated data
 st.write("### Updated Data:")
 st.write(response['data'])  # Display updated data after user input
+
+
+# Blue banner with white text using HTML and CSS
+st.markdown("""
+    <style>
+    .blue-banner {
+        background-color: #1E90FF;  /* DodgerBlue color */
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        font-family: Arial, sans-serif;
+    }
+    .blue-banner h1 {
+        color: white;
+        font-size: 24px;
+        margin: 0;
+    }
+    </style>
+    
+    <div class="blue-banner">
+        <h1>Welcome to My Streamlit App</h1>
+    </div>
+""", unsafe_allow_html=True)
