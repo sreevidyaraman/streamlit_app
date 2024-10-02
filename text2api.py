@@ -36,10 +36,7 @@ response = AgGrid(
 # Display the updated data
 st.write("### Updated Data:")
 st.write(response['data'])  # Display updated data after user input
-=======
-import streamlit as st
-import pandas as pd
-pip install streamlit-aggrid
+
 
 
 number = st.slider("Pick a number", 0, 100)
